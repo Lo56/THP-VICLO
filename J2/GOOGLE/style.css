@@ -1,53 +1,70 @@
-html, body
+
+* {margin: 0; padding: 0; border: 0}
+
+
+
+#wrapper
 {
-	height: 100%;
+	background-color: white;
 }
 
 
-#conteneur
-{
-	height: 100%;
-	width: 100%;
-}
 
 header
 {
+
 	display: flex;
-	justify-content: flex-end;
 	flex-direction: row;
-	height: 5%
+	justify-content: flex-end;
 	background-color: red;
+	
+}
+
+.nav
+{
+	padding: 2%;
 }
 
 body
 {
-	display: flex; 
-	flex-direction: row;
-	justify-content: center;
-	height: 80%;
+
+	background-color: blue;
+	
+	
+
 }
+
+#contenu
+{
+	background-color: green;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+
+.logoGBarre
+{
+	
+	height: 60%;
+
+}
+
+.souslogo
+{
+
+}
+
 
 footer
 {
 	display: flex;
-	height: 15%;
+	flex-direction: row;
+	justify-content: flex-end;
+	background-color: yellow;
 
 }
 
-#logog
-{
-
-	background: url("logog.png") no-repeat;
-	justify-content: center;
-}
 
 
-#pays
-{
-	background-color: #666666;
-}
-
-#liens
-{
-	background-color: #999999;
-}
