@@ -1,14 +1,21 @@
-
 * {margin: 0; padding: 0; border: 0}
 
 
 
 #wrapper
 {
-	background-color: white;
+	display:flex;
+  	flex-direction:column;
+  	justify-content:space-between;
+  	margin:0;
+  	position:absolute;
+  	top:0;
+  	bottom:0;
+  	left:0;
+  	right:0;
+  	font-family: arial;
+  	font-size: 13px;
 }
-
-
 
 header
 {
@@ -16,55 +23,132 @@ header
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	background-color: red;
-	
+	align-items: center;
+	height: 80px;
+	padding-right: 25px;
+
+}
+
+.boutonssouslogomain
+{
+	display: flex;
+ 	flex-direction: row;
+	align-items: center;
+
+}
+
+.boutonssouslogo{
+  border : none;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.54);
+  height: 10px;
+  font-weight: bold;
+  padding-top: 20px
 }
 
 .nav
 {
-	padding: 2%;
-}
-
-body
-{
-
-	background-color: blue;
-	
-	
+	padding: 10px;
 
 }
+
+.boutonconnect{
+   font-size: 12px;
+   height: 35px;
+   width: 100px;
+   font-weight: bold;
+   background-color: #0080FF;
+   color: white;
+   border: solid;
+   border-radius: 5px / 5px;
+ }
+
 
 #contenu
 {
-	background-color: green;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+	background-color: white;
 	height: 100%;
+	flex-direction: column;
+ 	justify-content: center;
+
 }
 
 
 .logoGBarre
 {
-	
-	height: 60%;
+	display: flex;
+	justify-content: center;
+	margin-top: 150px;
 
 }
 
-.souslogo
+.recherchegoogle
 {
+ 	box-shadow: 1px 1px 1px 1px #BDBDBD;
+  	width: 450px;
+  	height: 40px;
+  	margin: 0 auto;
+}
 
+.recherchegoogle input {
+  width: 450px;
+  height: 40px;
 }
 
 
 footer
 {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	background-color: yellow;
+	
+	color: #595959;
+	background-color: #f2f2f2;
+	min-height:64px;
+	font-size: 12px;	
 
 }
 
 
 
+#pays{
+	
+	font-size: 13px;
+	padding : 1% 1% 1% 2%;
+	border-bottom: 1px solid #e6e6e6;
+	border-top: 1px solid #e6e6e6;
+
+	
+}
+
+#liens{
+	display: flex;
+	flex-direction: row;
+	padding : 0.5% 2% 0% 1%;
+
+
+}
+.liensl{
+	
+	justify-content: flex-start;
+	padding : 1%;
+	
+}
+
+.liensm{
+	
+	justify-content: center;
+	padding : 1%;
+	flex:2;
+	
+}
+.liensr{
+
+	
+	justify-content: flex-end;
+	padding : 1%;
+	
+}
+
+a:link
+{
+	text-decoration: none;
+	color: black;
+}
