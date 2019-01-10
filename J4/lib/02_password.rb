@@ -15,14 +15,14 @@ def welcome(login, signup)
             login = gets.chomp
 
         else
-            puts "Bienvenue sur votre espace"
+            puts "Welcome to your dashboard"
 
             puts "#######################"
             puts "#         NSA         #"
             puts "#  -----------------  #"
-            puts "#   Vous avez passé   #"
-            puts "#       le test!      #"
-            puts "#      Bien joué      #"
+            puts "#   You have passed   #"
+            puts "#      the test       #"
+            puts "#      Well done      #"
             puts "#######################"
         end
     end

@@ -43,4 +43,31 @@ def full_pyramid
         end
 end
 
-full_pyramid
+def wtf_pyramid
+
+    puts "Welcome to wtf pyramide ! how many floor do you whant ? From 1 to 25"
+    
+    count = gets.chomp.to_i
+    
+    1.upto(count) do |i|
+        i.upto(count - 1) { print " " }
+        i.times { print " #" }
+        print "\n"
+    end
+    
+    count = count - 1
+    
+    count.downto(1) do |i|
+        i.upto(count) { print " " }
+        i.times { print " #" }
+        print "\n"
+    end
+    
+    
+    end
+
+    half_pyramid    
+
+    full_pyramid
+
+    wtf_pyramid
