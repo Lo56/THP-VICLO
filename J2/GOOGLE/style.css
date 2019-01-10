@@ -28,6 +28,11 @@ header
 	padding-right: 25px;
 
 }
+.test {
+	display: flex;
+	justify-content: center;
+}
+
 
 .boutonssouslogomain
 {
