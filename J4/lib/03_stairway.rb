@@ -1,9 +1,4 @@
 
-def dice_random
-    puts "Press enter"
-    gets.chomp
-end
-
 def random_game
 
     position = 0
@@ -16,15 +11,15 @@ def random_game
         puts "Press enter"
         gets.chomp
 
-      roll = rand(1..6)
+      roll = rand(6)
 
       if roll == 1 && position > 0
         position = position - 1
         puts "Tu as fait 1, tu recules à la marche #{position}"
-      elsif roll == a
+      elsif roll == a.include?(roll)
         position = position
           puts "Tu as fait #{roll} tu restes à la marche #{position}"
-      elsif roll == b
+      elsif roll == b.include?(roll)
         position = position + 1
           puts "Tu as fait 5, tu montes à la marche #{position}"
         end
